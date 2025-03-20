@@ -1,0 +1,43 @@
+.events-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.events-container {
+  flex: 1;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.events-container h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.events-content {
+  display: flex;
+  gap: 30px;
+}
+
+.events-sidebar {
+  flex: 0 0 300px;
+}
+
+.events-main {
+  flex: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .events-content {
+    flex-direction: column;
+  }
+  
+  .events-sidebar {
+    flex: none;
+    width: 100%;
+  }
+}

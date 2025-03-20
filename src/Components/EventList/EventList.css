@@ -1,0 +1,25 @@
+.event-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.no-events {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-style: italic;
+}
+
+/* Responsive Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .event-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .event-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
